@@ -1,1 +1,1 @@
-# happy_number
+# Generate a number
