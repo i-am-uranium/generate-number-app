@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:numbers/styles/app_style.dart';
 
-BoxDecoration get containerDecoration {
-  final stops = [0.0, 0.50, 0.80];
+BoxDecoration getContainerDecoration(
+    {@required List<Color> colors, @required List<double> stops}) {
   return BoxDecoration(
     gradient: LinearGradient(
       begin: Alignment.topLeft,
       end: Alignment.bottomLeft,
+      colors: colors,
       stops: stops,
-      colors: [
-        AppStyle.primaryColor,
-        AppStyle.primaryColorLight,
-        AppStyle.primaryColor,
-      ],
     ),
   );
 }

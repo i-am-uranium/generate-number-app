@@ -12,9 +12,6 @@ FlatButton getGhostButton({String title, Function onPressed}) {
     ),
     child: Text(
       '$title',
-      style: TextStyle(
-        color: AppStyle.white,
-      ),
     ),
     onPressed: onPressed,
   );

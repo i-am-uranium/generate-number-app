@@ -33,8 +33,8 @@ mixin AppStyle {
         )
         .apply(
           fontFamily: 'Rubik',
-          displayColor: blackColor,
-          bodyColor: blackColor,
+          displayColor: white,
+          bodyColor: white,
         );
   }
 }
