@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 mixin AppStyle {
-  static final Color primaryColor = Color(0xffFD6585);
-  static final Color primaryColorLight = Color(0xffFFD3A5);
+  static final Color primaryColor = Color(0xffD3CCE3);
+  static final Color primaryColorLight = Color(0xffE9E4F0);
+  static final Color secondaryColor = Color(0xff24243e);
   static const white = Colors.white;
   static const blackColor = Colors.black;
 
@@ -32,9 +33,8 @@ mixin AppStyle {
           ),
         )
         .apply(
-          fontFamily: 'Rubik',
-          displayColor: white,
-          bodyColor: white,
+          displayColor: secondaryColor,
+          bodyColor: secondaryColor,
         );
   }
 }

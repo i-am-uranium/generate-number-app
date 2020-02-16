@@ -11,7 +11,7 @@ class NumberApi {
   Future<NumberDetail> getHappyNumber() async {
     try {
       final response = await dio
-          .post('/$_apiVersion/numbers/happy-number', data: {'length': 5});
+          .post('/$_apiVersion/numbers/happy-number', data: {'length': 2});
       return NumberDetail.fromJson(response.data);
     } on Exception catch (e, stacktrace) {
       return NumberDetail(error: getError(e, stacktrace));
